@@ -3,11 +3,10 @@ from cms.toolbar_pool import toolbar_pool
 
 # import our models from "models.py"
 from .models import HeaderOptionsExtension
-from .models import HeaderImageCopyrightExtension
 
 @toolbar_pool.register
 class HeaderOptionsExtensionToolbar(ExtensionToolbar):
-    # loads the modal from "models.py"
+    # loads the model from "models.py"
     model = HeaderOptionsExtension
 
     def populate(self):
